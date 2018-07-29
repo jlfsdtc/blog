@@ -1,1 +1,1 @@
-"# blog" 
+just a blog
