@@ -14,6 +14,8 @@ import org.springframework.transaction.PlatformTransactionManager;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 import javax.sql.DataSource;
+import java.net.URLClassLoader;
+import java.util.Arrays;
 
 @SpringBootApplication
 @MapperScan("online.jlfsdtc.blog.dao")

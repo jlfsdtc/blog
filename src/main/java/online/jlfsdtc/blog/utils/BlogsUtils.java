@@ -13,6 +13,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.jdbc.datasource.DriverManagerDataSource;
 import org.yaml.snakeyaml.Yaml;
+//import org.yaml.snakeyaml.Yaml;
 
 import javax.crypto.BadPaddingException;
 import javax.crypto.IllegalBlockSizeException;
@@ -136,10 +137,10 @@ public class BlogsUtils {
      *
      * @return 数据源
      */
-    /*public static DataSource getNewDataSource() {
+    public static DataSource getNewDataSource() {
         synchronized (BlogsUtils.class) {
             if (newDataSource == null) {
-                Map activeMap = BlogsUtils.getYamlFromFile("application.yml_bak");
+                Map activeMap = BlogsUtils.getYamlFromFile("application.yml");
                 if (activeMap.isEmpty()) {
                     return newDataSource;
                 }
@@ -154,12 +155,12 @@ public class BlogsUtils {
             }
         }
         return newDataSource;
-    }*/
-    public static DataSource getNewDataSource() {
-        /*if (newDataSource == null) */
+    }
+    /*public static DataSource getNewDataSource() {
+        //if (newDataSource == null)
         synchronized (BlogsUtils.class) {
             if (newDataSource == null) {
-                Properties properties = BlogsUtils.getPropFromFile("application-default.properties");
+                Properties properties = BlogsUtils.getPropFromFile("application-default.properties_bak");
                 if (properties.size() == 0) {
                     return newDataSource;
                 }
@@ -173,7 +174,7 @@ public class BlogsUtils {
             }
         }
         return newDataSource;
-    }
+    }*/
 
     /**
      * 返回当前登录用户
