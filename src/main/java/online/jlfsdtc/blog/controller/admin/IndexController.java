@@ -4,12 +4,12 @@ import online.jlfsdtc.blog.constant.WebConst;
 import online.jlfsdtc.blog.controller.BaseController;
 import online.jlfsdtc.blog.dto.LogActions;
 import online.jlfsdtc.blog.exception.TipException;
-import online.jlfsdtc.blog.model.Bo.RestResponseBo;
-import online.jlfsdtc.blog.model.Bo.StatisticsBo;
-import online.jlfsdtc.blog.model.Vo.CommentVo;
-import online.jlfsdtc.blog.model.Vo.ContentVo;
-import online.jlfsdtc.blog.model.Vo.LogVo;
-import online.jlfsdtc.blog.model.Vo.UserVo;
+import online.jlfsdtc.blog.model.bo.RestResponseBo;
+import online.jlfsdtc.blog.model.bo.StatisticsBo;
+import online.jlfsdtc.blog.model.vo.CommentVo;
+import online.jlfsdtc.blog.model.vo.ContentVo;
+import online.jlfsdtc.blog.model.vo.LogVo;
+import online.jlfsdtc.blog.model.vo.UserVo;
 import online.jlfsdtc.blog.service.ILogService;
 import online.jlfsdtc.blog.service.ISiteService;
 import online.jlfsdtc.blog.service.IUserService;
@@ -111,7 +111,7 @@ public class IndexController extends BaseController {
             return RestResponseBo.fail("请确认信息输入完整");
         }
 
-        if (!users.getPassword().equals(BlogsUtils.MD5encode(users.getUsername() + oldPassword))) {
+        if (!users.getPassword().equals(BlogsUtils.md5Encode(users.getUsername() + oldPassword))) {
             return RestResponseBo.fail("旧密码错误");
         }
         if (password.length() < 6 || password.length() > 14) {
@@ -121,7 +121,7 @@ public class IndexController extends BaseController {
         try {
             UserVo temp = new UserVo();
             temp.setUid(users.getUid());
-            String pwd = BlogsUtils.MD5encode(users.getUsername() + password);
+            String pwd = BlogsUtils.md5Encode(users.getUsername() + password);
             temp.setPassword(pwd);
             userService.updateByUid(temp);
             logService.insertLog(LogActions.UP_PWD.getAction(), null, request.getRemoteAddr(), this.getUid(request));

@@ -1,7 +1,7 @@
 package online.jlfsdtc.blog.interceptor;
 
 
-import online.jlfsdtc.blog;
+import online.jlfsdtc.blog.utils.BlogsUtils;
 import org.springframework.stereotype.Component;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
 import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;

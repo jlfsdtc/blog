@@ -1,7 +1,7 @@
 package online.jlfsdtc.blog.utils;
 
 import online.jlfsdtc.blog.constant.WebConst;
-import online.jlfsdtc.blog.controller.AttachController;
+import online.jlfsdtc.blog.controller.admin.AttachController;
 import online.jlfsdtc.blog.model.vo.UserVo;
 import org.apache.commons.lang3.StringUtils;
 import org.commonmark.Extension;
@@ -136,10 +136,10 @@ public class BlogsUtils {
      *
      * @return 数据源
      */
-    public static DataSource getNewDataSource() {
+    /*public static DataSource getNewDataSource() {
         synchronized (BlogsUtils.class) {
             if (newDataSource == null) {
-                Map activeMap = BlogsUtils.getYamlFromFile("application.yml");
+                Map activeMap = BlogsUtils.getYamlFromFile("application.yml_bak");
                 if (activeMap.isEmpty()) {
                     return newDataSource;
                 }
@@ -150,6 +150,25 @@ public class BlogsUtils {
                 managerDataSource.setPassword((String) ((Map) ((Map) map.get("spring")).get("datasource")).get("password"));
                 managerDataSource.setDriverClassName((String) ((Map) ((Map) map.get("spring")).get("datasource")).get("driver-class-name"));
                 managerDataSource.setUrl((String) ((Map) ((Map) map.get("spring")).get("datasource")).get("url"));
+                newDataSource = managerDataSource;
+            }
+        }
+        return newDataSource;
+    }*/
+    public static DataSource getNewDataSource() {
+        /*if (newDataSource == null) */
+        synchronized (BlogsUtils.class) {
+            if (newDataSource == null) {
+                Properties properties = BlogsUtils.getPropFromFile("application-default.properties");
+                if (properties.size() == 0) {
+                    return newDataSource;
+                }
+                DriverManagerDataSource managerDataSource = new DriverManagerDataSource();
+                managerDataSource.setDriverClassName("com.mysql.jdbc.Driver");
+                managerDataSource.setPassword(properties.getProperty("spring.datasource.password"));
+                String str = "jdbc:mysql://" + properties.getProperty("spring.datasource.url") + "/" + properties.getProperty("spring.datasource.dbname") + "?useUnicode=true&characterEncoding=utf-8&useSSL=false";
+                managerDataSource.setUrl(str);
+                managerDataSource.setUsername(properties.getProperty("spring.datasource.username"));
                 newDataSource = managerDataSource;
             }
         }

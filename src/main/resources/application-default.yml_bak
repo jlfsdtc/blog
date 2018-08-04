@@ -28,7 +28,7 @@ server:
   port: 8080
 # pageHelper
 pagehelper:
-  helper-dialect: nysql
+  helper-dialect: mysql
   reasonable: true
   support-methods-arguments: true
   params: count=countsql

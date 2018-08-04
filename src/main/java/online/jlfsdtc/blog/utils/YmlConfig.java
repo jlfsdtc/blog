@@ -3,15 +3,13 @@ package online.jlfsdtc.blog.utils;
 import org.yaml.snakeyaml.Yaml;
 
 import java.io.FileInputStream;
-import java.io.InputStream;
 import java.net.URL;
-import java.util.HashMap;
 import java.util.Map;
 
 public class YmlConfig {
     public static void main(String[] args) {
         ClassLoader classLoader = YmlConfig.class.getClassLoader();
-        URL resource = classLoader.getResource("application.yml");
+        URL resource = classLoader.getResource("application.yml_bak");
         String path = resource.getPath();
         System.out.println(path);
         try {
@@ -20,7 +18,7 @@ public class YmlConfig {
             Object obj = yaml.load(new FileInputStream(path));
             System.out.println(obj);
             //也可以将值转换为Map
-            Map map = yaml.load(new FileInputStream(YmlConfig.class.getClassLoader().getResource("application.yml").getPath()));
+            Map map = yaml.load(new FileInputStream(YmlConfig.class.getClassLoader().getResource("application.yml_bak").getPath()));
             System.out.println(map);
             //通过map我们取值就可以了.
             System.out.println(map.get("spring"));

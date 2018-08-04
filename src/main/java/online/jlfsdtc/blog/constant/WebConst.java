@@ -1,8 +1,11 @@
 package online.jlfsdtc.blog.constant;
 
+import org.springframework.stereotype.Component;
+
 import java.util.HashMap;
 import java.util.Map;
 
+@Component
 public class WebConst {
     public static Map<String, String> initConfig = new HashMap<>();
 
