@@ -1,64 +1,26 @@
-2018-08-07 20:39:58.941 [http-nio-8080-exec-10] DEBUG online.jlfsdtc.blog.service.impl.ContentServiceImpl - Enter getContents method
-2018-08-07 20:39:59.229 [http-nio-8080-exec-10] DEBUG online.jlfsdtc.blog.service.impl.ContentServiceImpl - Exit getContents method
-2018-08-07 20:40:04.460 [http-nio-8080-exec-6] DEBUG online.jlfsdtc.blog.service.impl.ContentServiceImpl - Enter getContents method
-2018-08-07 20:40:04.475 [http-nio-8080-exec-6] DEBUG online.jlfsdtc.blog.service.impl.ContentServiceImpl - Exit getContents method
-2018-08-07 20:42:08.716 [http-nio-8080-exec-3] DEBUG online.jlfsdtc.blog.service.impl.ContentServiceImpl - Enter getContents method
-2018-08-07 20:42:08.746 [http-nio-8080-exec-3] DEBUG online.jlfsdtc.blog.service.impl.ContentServiceImpl - Exit getContents method
-2018-08-07 20:42:13.136 [http-nio-8080-exec-8] DEBUG online.jlfsdtc.blog.service.impl.ContentServiceImpl - Enter getContents method
-2018-08-07 20:42:13.147 [http-nio-8080-exec-8] DEBUG online.jlfsdtc.blog.service.impl.ContentServiceImpl - Exit getContents method
-2018-08-07 20:43:12.076 [http-nio-8080-exec-1] DEBUG online.jlfsdtc.blog.service.impl.ContentServiceImpl - Enter getContents method
-2018-08-07 20:43:12.276 [http-nio-8080-exec-1] DEBUG online.jlfsdtc.blog.service.impl.ContentServiceImpl - Exit getContents method
-2018-08-07 20:48:07.987 [http-nio-8080-exec-1] DEBUG online.jlfsdtc.blog.service.impl.ContentServiceImpl - Enter getContents method
-2018-08-07 20:48:08.204 [http-nio-8080-exec-1] DEBUG online.jlfsdtc.blog.service.impl.ContentServiceImpl - Exit getContents method
-2018-08-07 20:48:11.412 [http-nio-8080-exec-7] DEBUG online.jlfsdtc.blog.service.impl.ContentServiceImpl - Enter getContents method
-2018-08-07 20:48:11.427 [http-nio-8080-exec-7] DEBUG online.jlfsdtc.blog.service.impl.ContentServiceImpl - Exit getContents method
-2018-08-07 20:50:14.362 [http-nio-8080-exec-9] INFO  online.jlfsdtc.blog.controller.admin.IndexController - Enter admin index method
-2018-08-07 20:50:14.362 [http-nio-8080-exec-9] DEBUG online.jlfsdtc.blog.service.impl.SiteServiceImpl - Enter recentComments method:limit=5
-2018-08-07 20:50:14.412 [http-nio-8080-exec-9] DEBUG online.jlfsdtc.blog.service.impl.SiteServiceImpl - Exit recentComments method
-2018-08-07 20:50:14.412 [http-nio-8080-exec-9] DEBUG online.jlfsdtc.blog.service.impl.SiteServiceImpl - Enter recentContents method
-2018-08-07 20:50:14.444 [http-nio-8080-exec-9] DEBUG online.jlfsdtc.blog.service.impl.SiteServiceImpl - Exit recentContents method
-2018-08-07 20:50:14.444 [http-nio-8080-exec-9] DEBUG online.jlfsdtc.blog.service.impl.SiteServiceImpl - Enter getStatistics method
-2018-08-07 20:50:14.477 [http-nio-8080-exec-9] DEBUG online.jlfsdtc.blog.service.impl.SiteServiceImpl - Exit getStatistics method
-2018-08-07 20:50:14.477 [http-nio-8080-exec-9] DEBUG online.jlfsdtc.blog.service.impl.LogServiceImpl - Enter getLogs method:page=1,linit=5
-2018-08-07 20:50:14.491 [http-nio-8080-exec-9] DEBUG online.jlfsdtc.blog.service.impl.LogServiceImpl - Exit getLogs method
-2018-08-07 20:50:14.491 [http-nio-8080-exec-9] INFO  online.jlfsdtc.blog.controller.admin.IndexController - Exit admin index method
-2018-08-07 20:59:18.809 [http-nio-8080-exec-1] INFO  online.jlfsdtc.blog.controller.admin.IndexController - Enter admin index method
-2018-08-07 20:59:18.810 [http-nio-8080-exec-1] DEBUG online.jlfsdtc.blog.service.impl.SiteServiceImpl - Enter recentComments method:limit=5
-2018-08-07 20:59:19.020 [http-nio-8080-exec-1] DEBUG online.jlfsdtc.blog.service.impl.SiteServiceImpl - Exit recentComments method
-2018-08-07 20:59:19.020 [http-nio-8080-exec-1] DEBUG online.jlfsdtc.blog.service.impl.SiteServiceImpl - Enter recentContents method
-2018-08-07 20:59:19.056 [http-nio-8080-exec-1] DEBUG online.jlfsdtc.blog.service.impl.SiteServiceImpl - Exit recentContents method
-2018-08-07 20:59:19.056 [http-nio-8080-exec-1] DEBUG online.jlfsdtc.blog.service.impl.SiteServiceImpl - Enter getStatistics method
-2018-08-07 20:59:19.086 [http-nio-8080-exec-1] DEBUG online.jlfsdtc.blog.service.impl.SiteServiceImpl - Exit getStatistics method
-2018-08-07 20:59:19.086 [http-nio-8080-exec-1] DEBUG online.jlfsdtc.blog.service.impl.LogServiceImpl - Enter getLogs method:page=1,linit=5
-2018-08-07 20:59:19.102 [http-nio-8080-exec-1] DEBUG online.jlfsdtc.blog.service.impl.LogServiceImpl - Exit getLogs method
-2018-08-07 20:59:19.102 [http-nio-8080-exec-1] INFO  online.jlfsdtc.blog.controller.admin.IndexController - Exit admin index method
-2018-08-07 21:00:25.430 [http-nio-8080-exec-3] INFO  online.jlfsdtc.blog.controller.admin.IndexController - Enter admin index method
-2018-08-07 21:00:25.430 [http-nio-8080-exec-3] DEBUG online.jlfsdtc.blog.service.impl.SiteServiceImpl - Enter recentComments method:limit=5
-2018-08-07 21:00:25.435 [http-nio-8080-exec-3] DEBUG online.jlfsdtc.blog.service.impl.SiteServiceImpl - Exit recentComments method
-2018-08-07 21:00:25.435 [http-nio-8080-exec-3] DEBUG online.jlfsdtc.blog.service.impl.SiteServiceImpl - Enter recentContents method
-2018-08-07 21:00:25.444 [http-nio-8080-exec-3] DEBUG online.jlfsdtc.blog.service.impl.SiteServiceImpl - Exit recentContents method
-2018-08-07 21:00:25.444 [http-nio-8080-exec-3] DEBUG online.jlfsdtc.blog.service.impl.SiteServiceImpl - Enter getStatistics method
-2018-08-07 21:00:25.455 [http-nio-8080-exec-3] DEBUG online.jlfsdtc.blog.service.impl.SiteServiceImpl - Exit getStatistics method
-2018-08-07 21:00:25.455 [http-nio-8080-exec-3] DEBUG online.jlfsdtc.blog.service.impl.LogServiceImpl - Enter getLogs method:page=1,linit=5
-2018-08-07 21:00:25.464 [http-nio-8080-exec-3] DEBUG online.jlfsdtc.blog.service.impl.LogServiceImpl - Exit getLogs method
-2018-08-07 21:00:25.464 [http-nio-8080-exec-3] INFO  online.jlfsdtc.blog.controller.admin.IndexController - Exit admin index method
-2018-08-07 21:03:09.457 [http-nio-8080-exec-8] INFO  online.jlfsdtc.blog.controller.admin.IndexController - Enter admin index method
-2018-08-07 21:03:09.457 [http-nio-8080-exec-8] DEBUG online.jlfsdtc.blog.service.impl.SiteServiceImpl - Enter recentComments method:limit=5
-2018-08-07 21:03:09.505 [http-nio-8080-exec-8] DEBUG online.jlfsdtc.blog.service.impl.SiteServiceImpl - Exit recentComments method
-2018-08-07 21:03:09.505 [http-nio-8080-exec-8] DEBUG online.jlfsdtc.blog.service.impl.SiteServiceImpl - Enter recentContents method
-2018-08-07 21:03:09.531 [http-nio-8080-exec-8] DEBUG online.jlfsdtc.blog.service.impl.SiteServiceImpl - Exit recentContents method
-2018-08-07 21:03:09.531 [http-nio-8080-exec-8] DEBUG online.jlfsdtc.blog.service.impl.SiteServiceImpl - Enter getStatistics method
-2018-08-07 21:03:09.560 [http-nio-8080-exec-8] DEBUG online.jlfsdtc.blog.service.impl.SiteServiceImpl - Exit getStatistics method
-2018-08-07 21:03:09.560 [http-nio-8080-exec-8] DEBUG online.jlfsdtc.blog.service.impl.LogServiceImpl - Enter getLogs method:page=1,linit=5
-2018-08-07 21:03:09.578 [http-nio-8080-exec-8] DEBUG online.jlfsdtc.blog.service.impl.LogServiceImpl - Exit getLogs method
-2018-08-07 21:03:09.578 [http-nio-8080-exec-8] INFO  online.jlfsdtc.blog.controller.admin.IndexController - Exit admin index method
-2018-08-07 21:06:50.539 [http-nio-8080-exec-9] INFO  online.jlfsdtc.blog.controller.admin.IndexController - Enter admin index method
-2018-08-07 21:06:50.540 [http-nio-8080-exec-9] DEBUG online.jlfsdtc.blog.service.impl.SiteServiceImpl - Enter recentComments method:limit=5
-2018-08-07 21:06:50.588 [http-nio-8080-exec-9] DEBUG online.jlfsdtc.blog.service.impl.SiteServiceImpl - Exit recentComments method
-2018-08-07 21:06:50.588 [http-nio-8080-exec-9] DEBUG online.jlfsdtc.blog.service.impl.SiteServiceImpl - Enter recentContents method
-2018-08-07 21:06:50.621 [http-nio-8080-exec-9] DEBUG online.jlfsdtc.blog.service.impl.SiteServiceImpl - Exit recentContents method
-2018-08-07 21:06:50.621 [http-nio-8080-exec-9] DEBUG online.jlfsdtc.blog.service.impl.SiteServiceImpl - Enter getStatistics method
-2018-08-07 21:06:50.653 [http-nio-8080-exec-9] DEBUG online.jlfsdtc.blog.service.impl.SiteServiceImpl - Exit getStatistics method
-2018-08-07 21:06:50.653 [http-nio-8080-exec-9] DEBUG online.jlfsdtc.blog.service.impl.LogServiceImpl - Enter getLogs method:page=1,linit=5
-2018-08-07 21:06:50.666 [http-nio-8080-exec-9] DEBUG online.jlfsdtc.blog.service.impl.LogServiceImpl - Exit getLogs method
-2018-08-07 21:06:50.666 [http-nio-8080-exec-9] INFO  online.jlfsdtc.blog.controller.admin.IndexController - Exit admin index method
+2018-08-11 09:13:21.081 [http-nio-8080-exec-2] DEBUG online.jlfsdtc.blog.service.impl.ContentServiceImpl - Enter getContents method
+2018-08-11 09:13:22.279 [http-nio-8080-exec-2] DEBUG online.jlfsdtc.blog.service.impl.ContentServiceImpl - Exit getContents method
+2018-08-11 09:13:43.459 [http-nio-8080-exec-5] DEBUG online.jlfsdtc.blog.service.impl.ContentServiceImpl - Enter getContents method
+2018-08-11 09:13:43.789 [http-nio-8080-exec-5] DEBUG online.jlfsdtc.blog.service.impl.ContentServiceImpl - Exit getContents method
+2018-08-11 09:14:34.531 [http-nio-8080-exec-6] INFO  online.jlfsdtc.blog.controller.admin.IndexController - Enter admin index method
+2018-08-11 09:14:34.532 [http-nio-8080-exec-6] DEBUG online.jlfsdtc.blog.service.impl.SiteServiceImpl - Enter recentComments method:limit=5
+2018-08-11 09:14:34.725 [http-nio-8080-exec-6] DEBUG online.jlfsdtc.blog.service.impl.SiteServiceImpl - Exit recentComments method
+2018-08-11 09:14:34.725 [http-nio-8080-exec-6] DEBUG online.jlfsdtc.blog.service.impl.SiteServiceImpl - Enter recentContents method
+2018-08-11 09:14:35.095 [http-nio-8080-exec-6] DEBUG online.jlfsdtc.blog.service.impl.SiteServiceImpl - Exit recentContents method
+2018-08-11 09:14:35.095 [http-nio-8080-exec-6] DEBUG online.jlfsdtc.blog.service.impl.SiteServiceImpl - Enter getStatistics method
+2018-08-11 09:14:35.821 [http-nio-8080-exec-6] DEBUG online.jlfsdtc.blog.service.impl.SiteServiceImpl - Exit getStatistics method
+2018-08-11 09:14:35.821 [http-nio-8080-exec-6] DEBUG online.jlfsdtc.blog.service.impl.LogServiceImpl - Enter getLogs method:page=1,linit=5
+2018-08-11 09:14:36.206 [http-nio-8080-exec-6] DEBUG online.jlfsdtc.blog.service.impl.LogServiceImpl - Exit getLogs method
+2018-08-11 09:14:36.206 [http-nio-8080-exec-6] INFO  online.jlfsdtc.blog.controller.admin.IndexController - Exit admin index method
+2018-08-11 09:15:07.819 [http-nio-8080-exec-6] DEBUG online.jlfsdtc.blog.service.impl.ContentServiceImpl - Enter getContents method
+2018-08-11 09:15:08.223 [http-nio-8080-exec-6] DEBUG online.jlfsdtc.blog.service.impl.ContentServiceImpl - Exit getContents method
+2018-08-11 09:15:10.086 [http-nio-8080-exec-8] DEBUG online.jlfsdtc.blog.service.impl.SiteServiceImpl - Enter getArchives method
+2018-08-11 09:15:10.494 [http-nio-8080-exec-8] DEBUG online.jlfsdtc.blog.service.impl.SiteServiceImpl - Exit getArchives method
+2018-08-11 09:27:19.788 [http-nio-8080-exec-1] DEBUG online.jlfsdtc.blog.service.impl.ContentServiceImpl - Enter getContents method
+2018-08-11 09:27:20.674 [http-nio-8080-exec-1] DEBUG online.jlfsdtc.blog.service.impl.ContentServiceImpl - Exit getContents method
+2018-08-11 09:27:31.361 [http-nio-8080-exec-7] DEBUG online.jlfsdtc.blog.service.impl.SiteServiceImpl - Enter getArchives method
+2018-08-11 09:27:31.771 [http-nio-8080-exec-7] DEBUG online.jlfsdtc.blog.service.impl.SiteServiceImpl - Exit getArchives method
+2018-08-11 09:34:05.076 [http-nio-8080-exec-4] DEBUG online.jlfsdtc.blog.service.impl.ContentServiceImpl - Enter getContents method
+2018-08-11 09:34:05.644 [http-nio-8080-exec-4] DEBUG online.jlfsdtc.blog.service.impl.ContentServiceImpl - Exit getContents method
+2018-08-11 09:34:14.783 [http-nio-8080-exec-8] DEBUG online.jlfsdtc.blog.service.impl.SiteServiceImpl - Enter getArchives method
+2018-08-11 09:34:15.186 [http-nio-8080-exec-8] DEBUG online.jlfsdtc.blog.service.impl.SiteServiceImpl - Exit getArchives method
