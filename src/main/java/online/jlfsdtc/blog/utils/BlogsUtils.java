@@ -160,7 +160,7 @@ public class BlogsUtils {
         //if (newDataSource == null)
         synchronized (BlogsUtils.class) {
             if (newDataSource == null) {
-                Properties properties = BlogsUtils.getPropFromFile("application-default.properties_bak");
+                Properties properties = BlogsUtils.getPropFromFile("application-default.properties");
                 if (properties.size() == 0) {
                     return newDataSource;
                 }
@@ -457,7 +457,4 @@ public class BlogsUtils {
         return file.getAbsolutePath() + "/";
     }
 
-    public static void main(String[] args) {
-        LOGGER.info(getNewDataSource().toString());
-    }
 }

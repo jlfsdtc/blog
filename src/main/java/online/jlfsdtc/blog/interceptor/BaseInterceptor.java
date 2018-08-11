@@ -40,6 +40,8 @@ public class BaseInterceptor implements HandlerInterceptor {
     @Resource
     private AdminCommons adminCommons;
 
+    private int count = 0;
+
     @Override
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object o) throws Exception {
         String contextPath = request.getContextPath();

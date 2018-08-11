@@ -6,6 +6,7 @@ import online.jlfsdtc.blog.dto.MetaDto;
 import online.jlfsdtc.blog.dto.Types;
 import online.jlfsdtc.blog.model.bo.RestResponseBo;
 import online.jlfsdtc.blog.service.IMetaService;
+import online.jlfsdtc.blog.utils.AdminCommons;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
@@ -31,8 +32,10 @@ public class CategoryController extends BaseController {
     public String index(HttpServletRequest request) {
         List<MetaDto> categories = metasService.getMetaList(Types.CATEGORY.getType(), null, WebConst.MAX_POSTS);
         List<MetaDto> tags = metasService.getMetaList(Types.TAG.getType(), null, WebConst.MAX_POSTS);
+        String rand_color = AdminCommons.randColor();
         request.setAttribute("categories", categories);
         request.setAttribute("tags", tags);
+        request.setAttribute("rand_color", rand_color);
         return "admin/category";
     }
 
