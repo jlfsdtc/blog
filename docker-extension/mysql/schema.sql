@@ -167,4 +167,4 @@ CREATE TABLE `t_users` (
 
 INSERT INTO `t_users` (`uid`, `username`, `password`, `email`, `home_url`, `screen_name`, `created`, `activated`, `logged`, `group_name`)
 VALUES
-	(1, 'admin', 'a66abb5684c45962d887564f08346e8d', '1034683568@qq.com', NULL, 'admin', 1490756162, 0, 0, 'visitor');
+	(1, 'admin', 'eebe4400fc41a170144c93209681d6ce', '1034683568@qq.com', NULL, 'admin', 1490756162, 0, 0, 'visitor');
